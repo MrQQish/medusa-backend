@@ -43,12 +43,12 @@ const plugins = [
     },
   },
   {
-    /*resolve: "@medusajs/admin",
-    /** @type {import('@medusajs/admin').PluginOptions} *//*
+    resolve: "@medusajs/admin",
+    /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
       autoRebuild: false
     },
-  },*/
+  },
 ];
 
 const modules = {

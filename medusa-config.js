@@ -54,9 +54,6 @@ const plugins = [
     options: {
         s3_url: process.env.S3_URL,
         bucket: process.env.S3_BUCKET,
-        aws_config_object: {
-          customUserAgent: process.env.S3_CUSTOM_AGENT,
-        },
     },
   },
   {

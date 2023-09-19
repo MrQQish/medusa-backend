@@ -49,11 +49,29 @@ const plugins = [
       webhook_secret: process.env.STRIPE_WEBHOOK_SECRET,
     },
   },
+    resolve: `medusa-file-s3`,
+    options: {
+        s3_url: process.env.S3_URL,
+        bucket: process.env.S3_BUCKET,
+        aws_config_object: {
+          customUserAgent: process.env.S3_CUSTOM_AGENT,
+        },
+    },
   {
     resolve: "@medusajs/admin",
     /** @type {import('@medusajs/admin').PluginOptions} */
     options: {
       autoRebuild: false
+    },
+  },  
+  {
+    resolve: `medusa-file-s3`,
+    options: {
+        s3_url: process.env.S3_URL,
+        bucket: process.env.S3_BUCKET,
+        aws_config_object: {
+          customUserAgent: process.env.S3_CUSTOM_AGENT,
+        },
     },
   },
 ];

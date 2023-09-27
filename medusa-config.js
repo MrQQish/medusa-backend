@@ -76,6 +76,10 @@ const plugins = [
       from: process.env.SENDGRID_FROM,
       order_placed_template: 
         process.env.SENDGRID_ORDER_PLACED_ID,
+        order_shipped_template: 
+          process.env.SENDGRID_ORDER_SHIPPED_ID,
+        medusa_restock_template: 
+          process.env.SENDGRID_RESTOCK_ID,
     },
   },
 ];
